@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Program HomePage</title>
     <style>
-        nav {
+ nav {
             background-color: #333;
             padding: 1rem;
             margin-bottom: 2rem;
@@ -22,6 +22,50 @@
 
         nav a:hover {
             background-color: #444;
+        }
+
+        .year-section {
+            display: none;
+        }
+
+        .year-section.active {
+            display: block;
+        }
+
+        .year-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .year-list li {
+            background-color: #f0f0f0;
+            padding: 5px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .year-list li:hover {
+            background-color: #e0e0e0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
         }
 
         body {
